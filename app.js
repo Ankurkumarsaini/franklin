@@ -11,7 +11,7 @@ var gcpTasksRouter = require('./routes/gcpTasks');
 
 var demoRouter = require('./routes/demo');
 */
-var app = express();
+const app = express();
 
 /*
 // view engine setup
