@@ -8,11 +8,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var ideasRouter = require('./routes/ideas');
 var gcpTasksRouter = require('./routes/gcpTasks');
-*/
-var demoRouter = require('./routes/demo');
 
+var demoRouter = require('./routes/demo');
+*/
 var app = express();
 
+/*
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -22,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+*/
 var Port = process.env.PORT || 8100;
 
 app.get('/', (req, res) => {
