@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 */
-var Port = process.env.PORT || 8100;
+const Port = process.env.PORT || 8100;
 
 app.get('/', (req, res) => {
 	res.status(200).send('Server is working.');
