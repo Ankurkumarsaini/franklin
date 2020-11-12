@@ -4,8 +4,9 @@
   "engines": { 
       "node": "12.14.0" 
    }, 
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "dependencies": {  
     "body-parser": "^1.18.3",
