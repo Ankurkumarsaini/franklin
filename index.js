@@ -8,8 +8,9 @@ var express = require('express');
 var indexRouter = require('./routes/index');
 var ideasRouter = require('./routes/ideas');
 var gcpTasksRouter = require('./routes/gcpTasks');
-var demoRouter = require('./routes/demo');
 */
+var demoRouter = require('./routes/demo');
+
 var app = express();
 
 /*
