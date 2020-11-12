@@ -1,8 +1,8 @@
- const createError = require('http-errors');
-const express = require('express');
-const  path = require('path');
-const  cookieParser = require('cookie-parser');
-const logger = require('morgan');
+// const createError = require('http-errors');
+var express = require('express');
+//const  path = require('path');
+//const  cookieParser = require('cookie-parser');
+//const logger = require('morgan');
 
 /*
 var indexRouter = require('./routes/index');
@@ -11,7 +11,7 @@ var gcpTasksRouter = require('./routes/gcpTasks');
 
 var demoRouter = require('./routes/demo');
 */
-const app = express();
+var app = express();
 
 /*
 // view engine setup
@@ -28,11 +28,11 @@ var Port = process.env.PORT || 8100;
 
 app.get('/', (req, res) => {
 	res.status(200).send('Server is working.');
-})
+});
 
 app.listen(Port, () => {
 	console.log(`🌏 Server is running at http://localhost:${Port}`);
-})
+});
 
 
 //app.use('/', indexRouter);
