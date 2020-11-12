@@ -25,6 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var Port = process.env.PORT || 8100;
 
+app.get('/', (req, res) => {
+	res.status(200).send('Server is working.')
+})
+
+app.listen(port, () => {
+	console.log(`🌏 Server is running at http://localhost:${port}`)
+})
+
 
 //app.use('/', indexRouter);
 //app.use('/ideas', ideasRouter);
@@ -53,4 +61,4 @@ app.listen(Port,()=>{
 });
 
 
-module.exports = app;
+//module.exports = app;
